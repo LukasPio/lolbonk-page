@@ -1,266 +1,283 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0c0b16">
-  <meta name="description" content="Lolbonk — um novo caos está nascendo. Uma aventura de sobrevivência inspirada em Mega Bonk e no universo de League of Legends. Em desenvolvimento.">
+  <meta name="theme-color" content="#081118">
+  <meta name="description" content="Conheça Lolbonk, um projeto independente de fã inspirado em League of Legends e survival roguelites. Jinx, Ekko, Darius, Veigar e Rammus em destaque. Em desenvolvimento.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="LOLBONK — O Rift vai virar BONK!">
-  <meta property="og:description" content="Campeões, itens e o caos de uma nova aventura. Em desenvolvimento!">
+  <meta property="og:title" content="LOLBONK | Cinco lendas. Um novo caos.">
+  <meta property="og:description" content="Um projeto de fã inspirado em League of Legends. Conheça a proposta e os cinco campeões em destaque.">
   <meta property="og:image" content="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg">
-  <title>LOLBONK — Em desenvolvimento</title>
+  <meta name="color-scheme" content="dark">
+  <title>LOLBONK | Em desenvolvimento</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://ddragon.leagueoflegends.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script defer src="data:text/javascript,"></script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
-  <div class="ambient ambient-one" aria-hidden="true"></div>
-  <div class="ambient ambient-two" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <div class="shell header-inner">
-      <a class="brand" href="#inicio" aria-label="Lolbonk — início">
-        <span class="brand-star" aria-hidden="true">✳</span>
-        <span>LOL<span class="brand-accent">BONK</span><span class="brand-dot">.</span></span>
-      </a>
-      <nav class="main-nav" aria-label="Principal">
-        <a href="#sobre" data-i18n="navAbout">O projeto</a>
-        <a href="#personagens" data-i18n="navCharacters">Personagens</a>
-        <a href="#status" data-i18n="navStatus">Status</a>
-      </nav>
-      <div class="lang-switch" role="group" aria-label="Language / Idioma">
-        <button class="lang-btn is-active" type="button" data-lang="pt" aria-pressed="true">PT</button>
-        <span class="lang-separator" aria-hidden="true">/</span>
-        <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+  <header class="site-header" id="topo">
+    <div class="shell header-main">
+      <a class="wordmark" href="#topo" aria-label="LOLBONK — início"><span class="mark" aria-hidden="true">◆</span><span>LOL<span class="wordmark-accent">BONK</span></span></a>
+      <span class="header-meta" data-i18n="headerMeta">UM PROJETO DE FÃ DE LEAGUE OF LEGENDS</span>
+      <div class="languages" role="group" aria-label="Selecionar idioma / Choose language">
+        <button class="language is-active" type="button" data-lang="pt" aria-pressed="true">PT</button>
+        <span aria-hidden="true" class="language-rule"></span>
+        <button class="language" type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
     </div>
+    <nav class="main-nav shell" aria-label="Navegação principal" data-i18n-aria="navAria">
+      <a href="#projeto" data-i18n="navProject">O projeto</a>
+      <a href="#campeoes" data-i18n="navChampions">Campeões</a>
+      <a href="#bosses" data-i18n="navBosses">Primeiros bosses</a>
+      <a href="#status" data-i18n="navStatus">Desenvolvimento</a>
+    </nav>
   </header>
 
   <main id="conteudo">
-    <section class="hero shell" id="inicio" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span><span data-i18n="heroKicker">UM NOVO CAOS ESTÁ NASCENDO</span><span class="eyebrow-code">/ 001</span></div>
-        <h1 id="hero-title">
-          <span data-i18n="heroLine1">O RIFT VAI</span>
-          <span data-i18n="heroLine2">VIRAR</span>
-          <span class="hero-bonk">BONK<span class="hero-exclamation">!</span><span class="hero-spark" aria-hidden="true">✷</span></span>
-        </h1>
-        <p class="hero-description" data-i18n="heroDescription">Campeões, itens e uma dose absurda de caos. O universo que você conhece encontra a energia frenética de um survival roguelite. O resultado? Só pode dar BONK.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#sobre"><span data-i18n="heroCta">DESCUBRA O PROJETO</span><span class="button-icon" aria-hidden="true">↗</span></a>
-          <a class="button button-text" href="#status"><span data-i18n="heroSecondary">VER STATUS</span><span aria-hidden="true">↓</span></a>
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-backdrop" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg" alt="" fetchpriority="high" decoding="async">
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="shell hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span><span data-i18n="heroEyebrow">UMA NOVA HISTÓRIA ESTÁ SENDO FORJADA</span></p>
+          <h1 id="hero-title"><span data-i18n="heroTitleOne">CINCO LENDAS.</span><span data-i18n="heroTitleTwo">UM NOVO</span><em data-i18n="heroTitleThree">CAOS.</em></h1>
+          <p class="hero-summary" data-i18n="heroSummary">A energia de uma run insana encontra os campeões de Runeterra. Conheça Lolbonk: uma ideia de survival roguelite feita por fãs, ainda em desenvolvimento.</p>
+          <div class="hero-actions">
+            <a class="action action-primary" href="#campeoes"><span data-i18n="ctaChampions">CONHEÇA OS CAMPEÕES</span><span aria-hidden="true">↗</span></a>
+            <a class="action action-secondary" href="#projeto"><span data-i18n="ctaProject">SOBRE O PROJETO</span><span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="hero-annotation"><span aria-hidden="true">✧</span> <span data-i18n="heroArtNote">Arte oficial de League of Legends. Não representa gameplay de Lolbonk.</span></p>
         </div>
-        <div class="hero-notice"><span class="notice-icon" aria-hidden="true">✦</span><span data-i18n="heroNotice">PROJETO DE FÃ • AINDA EM DESENVOLVIMENTO</span></div>
+        <div class="hero-edge" aria-hidden="true">
+          <span class="hero-edge-number">01 <span>/</span> 05</span>
+          <span class="hero-edge-text">JINX · ZAUN</span>
+        </div>
       </div>
-
-      <div class="hero-visual" aria-label="Arte ilustrativa de Jinx, personagem de League of Legends">
-        <div class="visual-orbit orbit-one" aria-hidden="true"></div>
-        <div class="visual-orbit orbit-two" aria-hidden="true"></div>
-        <div class="visual-frame">
-          <img class="hero-art" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg" alt="Arte oficial de Jinx, de League of Legends, com cabelos azuis e sua arma" fetchpriority="high">
-          <div class="art-overlay" aria-hidden="true"></div>
-          <div class="visual-topline"><span>LOLBONK / ART DROP</span><span>001 ↗</span></div>
-          <div class="visual-bottomline"><span data-i18n="artDisclaimer">ARTE ILUSTRATIVA • NÃO É GAMEPLAY</span><span aria-hidden="true">✦</span></div>
-        </div>
-        <div class="bonk-stamp" aria-hidden="true"><span>GET</span><strong>BONKED!</strong><span>✴ ✴ ✴</span></div>
-        <div class="mini-champ">
-          <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg" alt="" loading="lazy">
-          <div><small data-i18n="miniLabel">ATENÇÃO!</small><strong data-i18n="miniText">CAOS À VISTA</strong></div>
-          <span aria-hidden="true">↗</span>
-        </div>
-        <span class="visual-asterisk" aria-hidden="true">✳</span>
-      </div>
+      <div class="hero-bottom-accent" aria-hidden="true"></div>
     </section>
 
-    <div class="ticker" aria-label="Lolbonk">
-      <div class="ticker-track" aria-hidden="true">
-        <span>NO RULES. JUST BONK.</span><b>✳</b><span>BUILDS ABSURDAS</span><b>✳</b><span>ONE MORE RUN</span><b>✳</b>
-        <span>NO RULES. JUST BONK.</span><b>✳</b><span>BUILDS ABSURDAS</span><b>✳</b><span>ONE MORE RUN</span><b>✳</b>
+    <div class="facts-bar" aria-label="Resumo do projeto" data-i18n-aria="factsAria">
+      <div class="shell facts-layout">
+        <div class="fact"><span class="fact-kicker" data-i18n="factOneLabel">O UNIVERSO</span><strong>LEAGUE OF LEGENDS</strong></div>
+        <div class="fact"><span class="fact-kicker" data-i18n="factTwoLabel">A INSPIRAÇÃO</span><strong>SURVIVAL ROGUELITE</strong></div>
+        <div class="fact"><span class="fact-kicker" data-i18n="factThreeLabel">O MOMENTO</span><strong data-i18n="factThreeValue">EM DESENVOLVIMENTO</strong></div>
       </div>
     </div>
 
-    <section class="about-section section-pad" id="sobre" aria-labelledby="about-title">
-      <div class="shell">
-        <div class="section-heading about-heading">
-          <div><p class="section-label"><span class="label-num">01 /</span> <span data-i18n="aboutLabel">O QUE É LOLBONK?</span></p>
-            <h2 id="about-title"><span data-i18n="aboutTitle1">O CAOS TEM</span><br><em data-i18n="aboutTitle2">UM NOVO NOME.</em></h2>
-          </div>
-          <p class="section-description" data-i18n="aboutDescription">Inspirado na energia de Mega Bonk e no universo de League of Legends, Lolbonk é um projeto independente que mistura campeões icônicos, itens e aquela vontade de tentar só mais uma partida.</p>
+    <section class="section project" id="projeto" aria-labelledby="project-title">
+      <div class="shell project-grid">
+        <div class="project-intro">
+          <p class="section-kicker"><span class="ordinal">01</span><span data-i18n="projectKicker">A IDEIA</span></p>
+          <h2 id="project-title" class="display-title"><span data-i18n="projectTitleOne">UMA RUN.</span><em data-i18n="projectTitleTwo">INFINITAS HISTÓRIAS.</em></h2>
         </div>
+        <div class="project-description">
+          <p class="project-lead" data-i18n="projectLead">E se a fantasia dos campeões de League of Legends encontrasse a intensidade de um jogo de sobrevivência?</p>
+          <p data-i18n="projectBody">Lolbonk é um projeto independente de fã inspirado no universo de Runeterra e no ritmo de survival roguelites. A proposta explora encontros, combinações e a vontade de tentar de novo — sem fingir que o jogo já está pronto.</p>
+          <p class="project-note"><span class="note-bar" aria-hidden="true"></span><span data-i18n="projectNote">Esta página apresenta a identidade e as inspirações do projeto, não uma lista de funcionalidades já lançadas.</span></p>
+        </div>
+      </div>
+      <div class="shell project-columns">
+        <article class="idea-card">
+          <span class="idea-number">I</span>
+          <h3 data-i18n="ideaOneTitle">PERSONALIDADE</h3>
+          <p data-i18n="ideaOneBody">Campeões icônicos e a atmosfera própria de cada canto de Runeterra.</p>
+        </article>
+        <article class="idea-card">
+          <span class="idea-number">II</span>
+          <h3 data-i18n="ideaTwoTitle">REJOGABILIDADE</h3>
+          <p data-i18n="ideaTwoBody">A inspiração vem da energia imprevisível de uma nova tentativa.</p>
+        </article>
+        <article class="idea-card">
+          <span class="idea-number">III</span>
+          <h3 data-i18n="ideaThreeTitle">UM MUNDO EM CRIAÇÃO</h3>
+          <p data-i18n="ideaThreeBody">Um projeto que ainda está tomando forma, sem data de estreia anunciada.</p>
+        </article>
+      </div>
+    </section>
 
-        <div class="features-grid">
-          <article class="feature-card feature-purple">
-            <span class="feature-index">/ 01</span>
-            <div class="feature-art" aria-hidden="true">✦</div>
-            <div class="feature-copy"><h3 data-i18n="feature1Title">CAMPEÕES ICÔNICOS</h3><p data-i18n="feature1Text">Rostos conhecidos, novas possibilidades e muita personalidade em cada aventura.</p></div>
-            <span class="feature-arrow" aria-hidden="true">↗</span>
-          </article>
-          <article class="feature-card feature-lime">
-            <span class="feature-index">/ 02</span>
-            <div class="item-orbit" aria-hidden="true">
-              <img src="https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3089.png" alt="" loading="lazy">
-              <img src="https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3031.png" alt="" loading="lazy">
-              <img src="https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3157.png" alt="" loading="lazy">
-            </div>
-            <div class="feature-copy"><h3 data-i18n="feature2Title">ITENS & COMBOS</h3><p data-i18n="feature2Text">A inspiração vem dos itens que você conhece. O limite é a criatividade.</p></div>
-            <span class="feature-arrow" aria-hidden="true">↗</span>
-          </article>
-          <article class="feature-card feature-coral">
-            <span class="feature-index">/ 03</span>
-            <div class="feature-art cross-art" aria-hidden="true">×<span>×</span></div>
-            <div class="feature-copy"><h3 data-i18n="feature3Title">SÓ MAIS UMA RUN</h3><p data-i18n="feature3Text">Ritmo acelerado, decisões caóticas e aquela energia de recomeçar tudo.</p></div>
-            <span class="feature-arrow" aria-hidden="true">↗</span>
-          </article>
+    <section class="section champions" id="campeoes" aria-labelledby="champions-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker"><span class="ordinal">02</span><span data-i18n="championsKicker">O ELENCO EM DESTAQUE</span></p>
+            <h2 id="champions-title" class="display-title"><span data-i18n="championsTitleOne">NOMES QUE VOCÊ</span><em data-i18n="championsTitleTwo">JÁ CONHECE.</em></h2>
+          </div>
+          <p class="section-aside" data-i18n="championsAside">Cinco campeões, cinco personalidades. Descubra a história oficial de cada um diretamente na Riot Games.</p>
+        </div>
+        <div class="roster-grid">
+          <a class="roster-card card-jinx" href="https://www.leagueoflegends.com/pt-br/champions/jinx/" target="_blank" rel="noopener noreferrer" data-champion="jinx" aria-label="Jinx — ver perfil oficial na Riot Games">
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg" alt="Jinx, com seus cabelos azuis e armamento" loading="lazy" decoding="async">
+            <span class="card-number">01 / 05</span>
+            <span class="card-content"><span class="card-role" data-i18n="jinxRole">ATIRADORA · ZAUN</span><strong>JINX</strong><span class="card-tagline" data-i18n="jinxTag">O Gatilho Desenfreado</span><span class="card-link"><span data-i18n="cardLearn">PERFIL OFICIAL</span> ↗</span></span>
+          </a>
+          <a class="roster-card card-ekko" href="https://www.leagueoflegends.com/pt-br/champions/ekko/" target="_blank" rel="noopener noreferrer" data-champion="ekko" aria-label="Ekko — ver perfil oficial na Riot Games">
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_0.jpg" alt="Ekko com seu dispositivo de manipulação temporal" loading="lazy" decoding="async">
+            <span class="card-number">02 / 05</span>
+            <span class="card-content"><span class="card-role" data-i18n="ekkoRole">ASSASSINO / MAGO · ZAUN</span><strong>EKKO</strong><span class="card-tagline" data-i18n="ekkoTag">O Rapaz que Estilhaçou o Tempo</span><span class="card-link"><span data-i18n="cardLearn">PERFIL OFICIAL</span> ↗</span></span>
+          </a>
+          <a class="roster-card card-darius" href="https://www.leagueoflegends.com/pt-br/champions/darius/" target="_blank" rel="noopener noreferrer" data-champion="darius" aria-label="Darius — ver perfil oficial na Riot Games">
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_0.jpg" alt="Darius com seu machado e armadura" loading="lazy" decoding="async">
+            <span class="card-number">03 / 05</span>
+            <span class="card-content"><span class="card-role" data-i18n="dariusRole">LUTADOR / TANQUE · NOXUS</span><strong>DARIUS</strong><span class="card-tagline" data-i18n="dariusTag">A Mão de Noxus</span><span class="card-link"><span data-i18n="cardLearn">PERFIL OFICIAL</span> ↗</span></span>
+          </a>
+          <a class="roster-card card-veigar" href="https://www.leagueoflegends.com/pt-br/champions/veigar/" target="_blank" rel="noopener noreferrer" data-champion="veigar" aria-label="Veigar — ver perfil oficial na Riot Games">
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Veigar_0.jpg" alt="Veigar, pequeno mago com chapéu e magia sombria" loading="lazy" decoding="async">
+            <span class="card-number">04 / 05</span>
+            <span class="card-content"><span class="card-role" data-i18n="veigarRole">MAGO · BANDÓPOLIS</span><strong>VEIGAR</strong><span class="card-tagline" data-i18n="veigarTag">O Pequeno Mestre do Mal</span><span class="card-link"><span data-i18n="cardLearn">PERFIL OFICIAL</span> ↗</span></span>
+          </a>
+          <a class="roster-card card-rammus" href="https://www.leagueoflegends.com/pt-br/champions/rammus/" target="_blank" rel="noopener noreferrer" data-champion="rammus" aria-label="Rammus — ver perfil oficial na Riot Games">
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rammus_0.jpg" alt="Rammus, criatura com casco espinhoso" loading="lazy" decoding="async">
+            <span class="card-number">05 / 05</span>
+            <span class="card-content"><span class="card-role" data-i18n="rammusRole">TANQUE · SHURIMA</span><strong>RAMMUS</strong><span class="card-tagline" data-i18n="rammusTag">O Tatu Blindado</span><span class="card-link"><span data-i18n="cardLearn">PERFIL OFICIAL</span> ↗</span></span>
+          </a>
+        </div>
+        <p class="roster-note" data-i18n="rosterNote">As ilustrações e descrições dos campeões são oficiais de League of Legends. Esta galeria não é uma captura do Lolbonk nem define habilidades ou papéis finais no projeto.</p>
+      </div>
+    </section>
+
+    <section class="bosses-section" id="bosses" aria-labelledby="bosses-title">
+      <div class="shell bosses-grid">
+        <div class="bosses-art" aria-hidden="true">
+          <span class="ring ring-one"></span><span class="ring ring-two"></span>
+          <span class="bosses-glyph">✧</span>
+          <span class="bosses-corner bosses-corner-top">LOLBONK // ENCOUNTERS</span>
+          <span class="bosses-corner bosses-corner-bottom">??? — ???</span>
+        </div>
+        <div class="bosses-content">
+          <p class="section-kicker"><span class="ordinal">03</span><span data-i18n="bossesKicker">OS PRIMEIROS DESAFIOS</span></p>
+          <h2 id="bosses-title" class="display-title"><span data-i18n="bossesTitleOne">TODO CAOS</span><em data-i18n="bossesTitleTwo">TEM SEUS CHEFES.</em></h2>
+          <p data-i18n="bossesText">Os primeiros bosses fazem parte do que estamos preparando para o universo de Lolbonk. Por enquanto, este espaço é um primeiro vislumbre do clima dos confrontos — sem divulgar nomes, imagens de jogo ou mecânicas não confirmadas.</p>
+          <span class="bosses-caption" data-i18n="bossesCaption">PRÉVIA CONCEITUAL · SEM GAMEPLAY</span>
         </div>
       </div>
     </section>
 
-    <section class="characters-section section-pad" id="personagens" aria-labelledby="characters-title">
-      <div class="shell">
-        <div class="section-heading characters-heading">
-          <div><p class="section-label"><span class="label-num">02 /</span> <span data-i18n="charactersLabel">UM UNIVERSO DE LENDAS</span></p>
-            <h2 id="characters-title"><span data-i18n="charactersTitle1">ROSTOS FAMILIARES.</span><br><em data-i18n="charactersTitle2">ENERGIA ABSURDA.</em></h2>
-          </div>
-          <span class="pill-outline" data-i18n="charactersPill">REFERÊNCIAS VISUAIS ↗</span>
-        </div>
-        <div class="champions-grid">
-          <article class="champion champion-jinx">
-            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg" alt="Jinx — arte oficial de League of Legends" loading="lazy">
-            <div class="champion-shade"></div><div class="champion-number">01 / CHAOS</div><h3>JINX<span>↗</span></h3>
-          </article>
-          <article class="champion champion-yasuo">
-            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg" alt="Yasuo — arte oficial de League of Legends" loading="lazy">
-            <div class="champion-shade"></div><div class="champion-number">02 / WIND</div><h3>YASUO<span>↗</span></h3>
-          </article>
-          <article class="champion champion-teemo">
-            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg" alt="Teemo — arte oficial de League of Legends" loading="lazy">
-            <div class="champion-shade"></div><div class="champion-number">03 / TROUBLE</div><h3>TEEMO<span>↗</span></h3>
-          </article>
-        </div>
-        <p class="character-note" data-i18n="charactersDisclaimer">* Artes oficiais usadas como inspiração visual. A presença aqui não confirma personagens jogáveis ou conteúdo final.</p>
-      </div>
-    </section>
-
-    <section class="status-section" id="status" aria-labelledby="status-title">
-      <div class="shell status-wrap">
-        <div class="status-spark status-spark-one" aria-hidden="true">✳</div>
-        <div class="status-spark status-spark-two" aria-hidden="true">✦</div>
-        <div class="status-inner">
-          <div class="status-top"><span class="status-pill"><span class="live-dot" aria-hidden="true"></span><span data-i18n="statusPill">STATUS DO PROJETO: EM DESENVOLVIMENTO</span></span><span class="status-code">LOLBONK // WIP</span></div>
-          <p class="status-overline" data-i18n="statusOverline">ALGO ABSURDO ESTÁ SENDO PREPARADO</p>
-          <h2 id="status-title"><span data-i18n="statusTitle1">AINDA ESTAMOS</span><br><span class="outline-type" data-i18n="statusTitle2">COZINHANDO.</span><span class="status-fire" aria-hidden="true">✷</span></h2>
-          <p class="status-description" data-i18n="statusDescription">O Lolbonk ainda está ganhando vida. Sem data de lançamento por enquanto — mas com muita vontade de transformar essa ideia em um baita BONK.</p>
-          <div class="status-bottom"><span data-i18n="statusBottom">FIQUE DE OLHO. O CAOS ESTÁ CHEGANDO.</span><span class="status-arrow" aria-hidden="true">↗</span></div>
+    <section class="section status" id="status" aria-labelledby="status-title">
+      <div class="shell status-frame">
+        <div class="status-header"><span class="status-dot" aria-hidden="true"></span><span data-i18n="statusKicker">STATUS ATUAL: EM DESENVOLVIMENTO</span><span class="status-rule" aria-hidden="true"></span><span>LOLBONK / WIP</span></div>
+        <div class="status-body">
+          <div><p class="section-kicker" data-i18n="statusSubhead">O QUE VEM PELA FRENTE</p><h2 id="status-title" class="display-title"><span data-i18n="statusTitleOne">AINDA ESTAMOS</span><em data-i18n="statusTitleTwo">FORJANDO O CAOS.</em></h2></div>
+          <div class="status-copy"><p data-i18n="statusText">Lolbonk está em desenvolvimento e ainda não tem data de lançamento anunciada. A página vai apresentar novidades quando houver informações reais para compartilhar.</p><a href="https://github.com/LukasPio/lolbonk-page" target="_blank" rel="noopener noreferrer" class="text-link"><span data-i18n="githubLink">ACOMPANHAR NO GITHUB</span> ↗</a></div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="shell footer-main">
-      <a class="brand footer-brand" href="#inicio" aria-label="Lolbonk — início"><span class="brand-star" aria-hidden="true">✳</span><span>LOL<span class="brand-accent">BONK</span><span class="brand-dot">.</span></span></a>
-      <span class="footer-tagline" data-i18n="footerTagline">UM BONK DE CADA VEZ.</span>
-      <a class="footer-top" href="#inicio"><span data-i18n="backTop">VOLTAR AO TOPO</span> ↑</a>
+    <div class="shell footer-top">
+      <a class="wordmark footer-wordmark" href="#topo" aria-label="LOLBONK — voltar ao início"><span class="mark" aria-hidden="true">◆</span><span>LOL<span class="wordmark-accent">BONK</span></span></a>
+      <a class="text-link" href="#topo"><span data-i18n="backToTop">VOLTAR AO TOPO</span> ↑</a>
     </div>
-    <div class="shell footer-legal">
-      <p data-i18n="legal">Lolbonk foi criado sob a política "Legal Jibber Jabber" da Riot Games, utilizando recursos pertencentes à Riot Games. A Riot Games não endossa nem patrocina este projeto. Projeto independente de fã, não oficial.</p>
-      <p>© <span id="current-year">2026</span> LOLBONK · <span data-i18n="footerWip">EM DESENVOLVIMENTO</span></p>
+    <div class="shell footer-bottom">
+      <div class="footer-disclaimer">
+        <p data-i18n="fanNote">Projeto independente de fã. Não é um produto oficial da Riot Games.</p>
+        <p class="legal-text">Lolbonk was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.</p>
+        <a href="https://www.riotgames.com/en/legal" target="_blank" rel="noopener noreferrer" data-i18n="policyLink">Política de projetos de fãs da Riot ↗</a>
+      </div>
+      <p class="copyright">© <span id="year">2026</span> LOLBONK <span aria-hidden="true">·</span> <span data-i18n="footerWip">EM DESENVOLVIMENTO</span></p>
     </div>
   </footer>
 
   <script>
     (function () {
       'use strict';
-      var translations = {
+      var copy = {
         pt: {
-          skip: 'Pular para o conteúdo',
-          navAbout: 'O projeto', navCharacters: 'Personagens', navStatus: 'Status',
-          heroKicker: 'UM NOVO CAOS ESTÁ NASCENDO', heroLine1: 'O RIFT VAI', heroLine2: 'VIRAR',
-          heroDescription: 'Campeões, itens e uma dose absurda de caos. O universo que você conhece encontra a energia frenética de um survival roguelite. O resultado? Só pode dar BONK.',
-          heroCta: 'DESCUBRA O PROJETO', heroSecondary: 'VER STATUS',
-          heroNotice: 'PROJETO DE FÃ • AINDA EM DESENVOLVIMENTO',
-          artDisclaimer: 'ARTE ILUSTRATIVA • NÃO É GAMEPLAY',
-          miniLabel: 'ATENÇÃO!', miniText: 'CAOS À VISTA',
-          aboutLabel: 'O QUE É LOLBONK?', aboutTitle1: 'O CAOS TEM', aboutTitle2: 'UM NOVO NOME.',
-          aboutDescription: 'Inspirado na energia de Mega Bonk e no universo de League of Legends, Lolbonk é um projeto independente que mistura campeões icônicos, itens e aquela vontade de tentar só mais uma partida.',
-          feature1Title: 'CAMPEÕES ICÔNICOS', feature1Text: 'Rostos conhecidos, novas possibilidades e muita personalidade em cada aventura.',
-          feature2Title: 'ITENS & COMBOS', feature2Text: 'A inspiração vem dos itens que você conhece. O limite é a criatividade.',
-          feature3Title: 'SÓ MAIS UMA RUN', feature3Text: 'Ritmo acelerado, decisões caóticas e aquela energia de recomeçar tudo.',
-          charactersLabel: 'UM UNIVERSO DE LENDAS', charactersTitle1: 'ROSTOS FAMILIARES.', charactersTitle2: 'ENERGIA ABSURDA.',
-          charactersPill: 'REFERÊNCIAS VISUAIS ↗',
-          charactersDisclaimer: '* Artes oficiais usadas como inspiração visual. A presença aqui não confirma personagens jogáveis ou conteúdo final.',
-          statusPill: 'STATUS DO PROJETO: EM DESENVOLVIMENTO',
-          statusOverline: 'ALGO ABSURDO ESTÁ SENDO PREPARADO',
-          statusTitle1: 'AINDA ESTAMOS', statusTitle2: 'COZINHANDO.',
-          statusDescription: 'O Lolbonk ainda está ganhando vida. Sem data de lançamento por enquanto — mas com muita vontade de transformar essa ideia em um baita BONK.',
-          statusBottom: 'FIQUE DE OLHO. O CAOS ESTÁ CHEGANDO.',
-          footerTagline: 'UM BONK DE CADA VEZ.', backTop: 'VOLTAR AO TOPO', footerWip: 'EM DESENVOLVIMENTO',
-          legal: 'Lolbonk foi criado sob a política "Legal Jibber Jabber" da Riot Games, utilizando recursos pertencentes à Riot Games. A Riot Games não endossa nem patrocina este projeto. Projeto independente de fã, não oficial.'
+          skip:'Pular para o conteúdo',headerMeta:'UM PROJETO DE FÃ DE LEAGUE OF LEGENDS',navAria:'Navegação principal',
+          navProject:'O projeto',navChampions:'Campeões',navBosses:'Primeiros bosses',navStatus:'Desenvolvimento',
+          heroEyebrow:'UMA NOVA HISTÓRIA ESTÁ SENDO FORJADA',heroTitleOne:'CINCO LENDAS.',heroTitleTwo:'UM NOVO',heroTitleThree:'CAOS.',
+          heroSummary:'A energia de uma run insana encontra os campeões de Runeterra. Conheça Lolbonk: uma ideia de survival roguelite feita por fãs, ainda em desenvolvimento.',
+          ctaChampions:'CONHEÇA OS CAMPEÕES',ctaProject:'SOBRE O PROJETO',heroArtNote:'Arte oficial de League of Legends. Não representa gameplay de Lolbonk.',
+          factsAria:'Resumo do projeto',factOneLabel:'O UNIVERSO',factTwoLabel:'A INSPIRAÇÃO',factThreeLabel:'O MOMENTO',factThreeValue:'EM DESENVOLVIMENTO',
+          projectKicker:'A IDEIA',projectTitleOne:'UMA RUN.',projectTitleTwo:'INFINITAS HISTÓRIAS.',
+          projectLead:'E se a fantasia dos campeões de League of Legends encontrasse a intensidade de um jogo de sobrevivência?',
+          projectBody:'Lolbonk é um projeto independente de fã inspirado no universo de Runeterra e no ritmo de survival roguelites. A proposta explora encontros, combinações e a vontade de tentar de novo — sem fingir que o jogo já está pronto.',
+          projectNote:'Esta página apresenta a identidade e as inspirações do projeto, não uma lista de funcionalidades já lançadas.',
+          ideaOneTitle:'PERSONALIDADE',ideaOneBody:'Campeões icônicos e a atmosfera própria de cada canto de Runeterra.',
+          ideaTwoTitle:'REJOGABILIDADE',ideaTwoBody:'A inspiração vem da energia imprevisível de uma nova tentativa.',
+          ideaThreeTitle:'UM MUNDO EM CRIAÇÃO',ideaThreeBody:'Um projeto que ainda está tomando forma, sem data de estreia anunciada.',
+          championsKicker:'O ELENCO EM DESTAQUE',championsTitleOne:'NOMES QUE VOCÊ',championsTitleTwo:'JÁ CONHECE.',
+          championsAside:'Cinco campeões, cinco personalidades. Descubra a história oficial de cada um diretamente na Riot Games.',
+          jinxRole:'ATIRADORA · ZAUN',jinxTag:'O Gatilho Desenfreado',ekkoRole:'ASSASSINO / MAGO · ZAUN',ekkoTag:'O Rapaz que Estilhaçou o Tempo',
+          dariusRole:'LUTADOR / TANQUE · NOXUS',dariusTag:'A Mão de Noxus',veigarRole:'MAGO · BANDÓPOLIS',veigarTag:'O Pequeno Mestre do Mal',
+          rammusRole:'TANQUE · SHURIMA',rammusTag:'O Tatu Blindado',cardLearn:'PERFIL OFICIAL',
+          rosterNote:'As ilustrações e descrições dos campeões são oficiais de League of Legends. Esta galeria não é uma captura do Lolbonk nem define habilidades ou papéis finais no projeto.',
+          bossesKicker:'OS PRIMEIROS DESAFIOS',bossesTitleOne:'TODO CAOS',bossesTitleTwo:'TEM SEUS CHEFES.',
+          bossesText:'Os primeiros bosses fazem parte do que estamos preparando para o universo de Lolbonk. Por enquanto, este espaço é um primeiro vislumbre do clima dos confrontos — sem divulgar nomes, imagens de jogo ou mecânicas não confirmadas.',
+          bossesCaption:'PRÉVIA CONCEITUAL · SEM GAMEPLAY',statusKicker:'STATUS ATUAL: EM DESENVOLVIMENTO',statusSubhead:'O QUE VEM PELA FRENTE',
+          statusTitleOne:'AINDA ESTAMOS',statusTitleTwo:'FORJANDO O CAOS.',statusText:'Lolbonk está em desenvolvimento e ainda não tem data de lançamento anunciada. A página vai apresentar novidades quando houver informações reais para compartilhar.',
+          githubLink:'ACOMPANHAR NO GITHUB',backToTop:'VOLTAR AO TOPO',fanNote:'Projeto independente de fã. Não é um produto oficial da Riot Games.',policyLink:'Política de projetos de fãs da Riot ↗',footerWip:'EM DESENVOLVIMENTO'
         },
         en: {
-          skip: 'Skip to content',
-          navAbout: 'The project', navCharacters: 'Characters', navStatus: 'Status',
-          heroKicker: 'A NEW KIND OF CHAOS IS COMING', heroLine1: 'THE RIFT', heroLine2: 'GOES',
-          heroDescription: 'Champions, items, and an outrageous dose of chaos. The universe you know meets the frantic energy of a survival roguelite. The result? Nothing but BONK.',
-          heroCta: 'DISCOVER THE PROJECT', heroSecondary: 'CHECK STATUS',
-          heroNotice: 'FAN PROJECT • STILL IN DEVELOPMENT',
-          artDisclaimer: 'ILLUSTRATIVE ART • NOT GAMEPLAY',
-          miniLabel: 'HEADS UP!', miniText: 'CHAOS AHEAD',
-          aboutLabel: 'WHAT IS LOLBONK?', aboutTitle1: 'CHAOS HAS', aboutTitle2: 'A NEW NAME.',
-          aboutDescription: 'Inspired by the energy of Mega Bonk and the League of Legends universe, Lolbonk is an independent project blending iconic champions, items, and the urge to play just one more run.',
-          feature1Title: 'ICONIC CHAMPIONS', feature1Text: 'Familiar faces, fresh possibilities, and loads of personality in every adventure.',
-          feature2Title: 'ITEMS & COMBOS', feature2Text: 'Inspired by the items you know. Imagination is the only limit.',
-          feature3Title: 'ONE MORE RUN', feature3Text: 'Fast-paced energy, chaotic choices, and that irresistible urge to start again.',
-          charactersLabel: 'A UNIVERSE OF LEGENDS', charactersTitle1: 'FAMILIAR FACES.', charactersTitle2: 'WILD ENERGY.',
-          charactersPill: 'VISUAL REFERENCES ↗',
-          charactersDisclaimer: '* Official artwork used for visual inspiration. Appearance here does not confirm playable characters or final game content.',
-          statusPill: 'PROJECT STATUS: IN DEVELOPMENT',
-          statusOverline: 'SOMETHING WILD IS IN THE WORKS',
-          statusTitle1: "WE'RE STILL", statusTitle2: 'COOKING.',
-          statusDescription: 'Lolbonk is still coming to life. No release date just yet — but plenty of ambition to turn this wild idea into one massive BONK.',
-          statusBottom: 'KEEP YOUR EYES OPEN. CHAOS IS COMING.',
-          footerTagline: 'ONE BONK AT A TIME.', backTop: 'BACK TO TOP', footerWip: 'IN DEVELOPMENT',
-          legal: 'Lolbonk was created under Riot Games’ "Legal Jibber Jabber" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project. Independent, unofficial fan project.'
+          skip:'Skip to content',headerMeta:'AN INDEPENDENT LEAGUE OF LEGENDS FAN PROJECT',navAria:'Main navigation',
+          navProject:'The project',navChampions:'Champions',navBosses:'First bosses',navStatus:'Development',
+          heroEyebrow:'A NEW STORY IS BEING FORGED',heroTitleOne:'FIVE LEGENDS.',heroTitleTwo:'ONE NEW',heroTitleThree:'CHAOS.',
+          heroSummary:'The energy of a wild run meets the champions of Runeterra. Discover Lolbonk: a fan-made survival roguelite concept, currently in development.',
+          ctaChampions:'MEET THE CHAMPIONS',ctaProject:'ABOUT THE PROJECT',heroArtNote:'Official League of Legends artwork. Not Lolbonk gameplay.',
+          factsAria:'Project overview',factOneLabel:'THE UNIVERSE',factTwoLabel:'THE INSPIRATION',factThreeLabel:'CURRENT STAGE',factThreeValue:'IN DEVELOPMENT',
+          projectKicker:'THE CONCEPT',projectTitleOne:'ONE RUN.',projectTitleTwo:'ENDLESS STORIES.',
+          projectLead:'What if the fantasy of League of Legends champions met the intensity of a survival game?',
+          projectBody:'Lolbonk is an independent fan project inspired by Runeterra and the pace of survival roguelites. The concept explores encounters, combinations, and the urge to try again — without pretending the game is already finished.',
+          projectNote:'This page showcases the project’s identity and inspirations, not a list of released features.',
+          ideaOneTitle:'PERSONALITY',ideaOneBody:'Iconic champions and the distinct atmosphere of every corner of Runeterra.',
+          ideaTwoTitle:'REPLAYABILITY',ideaTwoBody:'Inspired by the unpredictable excitement of starting another run.',
+          ideaThreeTitle:'A WORLD TAKING SHAPE',ideaThreeBody:'A work in progress, with no announced release date.',
+          championsKicker:'THE FEATURED LINEUP',championsTitleOne:'FACES YOU ALREADY',championsTitleTwo:'KNOW.',
+          championsAside:'Five champions, five personalities. Explore their official stories directly on Riot Games.',
+          jinxRole:'MARKSMAN · ZAUN',jinxTag:'The Loose Cannon',ekkoRole:'ASSASSIN / MAGE · ZAUN',ekkoTag:'The Boy Who Shattered Time',
+          dariusRole:'FIGHTER / TANK · NOXUS',dariusTag:'The Hand of Noxus',veigarRole:'MAGE · BANDLE CITY',veigarTag:'The Tiny Master of Evil',
+          rammusRole:'TANK · SHURIMA',rammusTag:'The Armordillo',cardLearn:'OFFICIAL PROFILE',
+          rosterNote:'Champion artwork and descriptions are from League of Legends. This gallery is not Lolbonk gameplay and does not define final abilities or roles in the project.',
+          bossesKicker:'THE FIRST CHALLENGES',bossesTitleOne:'EVERY CHAOS',bossesTitleTwo:'HAS ITS BOSSES.',
+          bossesText:'The first bosses are part of what we are preparing for the world of Lolbonk. For now, this is a glimpse of the atmosphere of those encounters — without revealing unconfirmed names, gameplay images, or mechanics.',
+          bossesCaption:'CONCEPT PREVIEW · NOT GAMEPLAY',statusKicker:'CURRENT STATUS: IN DEVELOPMENT',statusSubhead:'WHAT LIES AHEAD',
+          statusTitleOne:'WE ARE STILL',statusTitleTwo:'FORGING CHAOS.',statusText:'Lolbonk is in development and has no announced release date. This page will share updates when there is real news to show.',
+          githubLink:'FOLLOW ON GITHUB',backToTop:'BACK TO TOP',fanNote:'Independent fan project. Not an official Riot Games product.',policyLink:'Riot fan project policy ↗',footerWip:'IN DEVELOPMENT'
         }
       };
-
-      var buttons = Array.prototype.slice.call(document.querySelectorAll('.lang-btn'));
-      function setLanguage(lang) {
-        if (!translations[lang]) lang = 'pt';
-        var strings = translations[lang];
+      var buttons = document.querySelectorAll('.language');
+      function setLanguage(language) {
+        var lang = copy[language] ? language : 'pt';
+        var strings = copy[lang];
         document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
-        document.querySelectorAll('[data-i18n]').forEach(function (el) {
-          var key = el.getAttribute('data-i18n');
-          if (Object.prototype.hasOwnProperty.call(strings, key)) el.textContent = strings[key];
+        document.querySelectorAll('[data-i18n]').forEach(function (element) {
+          var key = element.getAttribute('data-i18n');
+          if (Object.prototype.hasOwnProperty.call(strings, key)) element.textContent = strings[key];
         });
-        buttons.forEach(function (btn) {
-          var active = btn.getAttribute('data-lang') === lang;
-          btn.classList.toggle('is-active', active);
-          btn.setAttribute('aria-pressed', String(active));
+        document.querySelectorAll('[data-i18n-aria]').forEach(function (element) {
+          var key = element.getAttribute('data-i18n-aria');
+          if (Object.prototype.hasOwnProperty.call(strings, key)) element.setAttribute('aria-label', strings[key]);
         });
-        document.title = lang === 'pt' ? 'LOLBONK — Em desenvolvimento' : 'LOLBONK — In development';
+        buttons.forEach(function (button) {
+          var active = button.getAttribute('data-lang') === lang;
+          button.classList.toggle('is-active', active);
+          button.setAttribute('aria-pressed', String(active));
+        });
+        document.querySelectorAll('[data-champion]').forEach(function (card) {
+          var name = card.getAttribute('data-champion');
+          card.href = 'https://www.leagueoflegends.com/' + (lang === 'pt' ? 'pt-br' : 'en-us') + '/champions/' + name + '/';
+          card.setAttribute('aria-label', name.charAt(0).toUpperCase() + name.slice(1) + (lang === 'pt' ? ' — abrir perfil oficial da Riot Games (nova aba)' : ' — open official Riot Games profile (new tab)'));
+        });
+        document.title = lang === 'pt' ? 'LOLBONK | Em desenvolvimento' : 'LOLBONK | In development';
         var meta = document.querySelector('meta[name="description"]');
         if (meta) meta.content = lang === 'pt'
-          ? 'Lolbonk — um novo caos está nascendo. Projeto de fã inspirado em Mega Bonk e League of Legends. Em desenvolvimento.'
-          : 'Lolbonk — a new kind of chaos is coming. A fan project inspired by Mega Bonk and League of Legends. In development.';
-        try { localStorage.setItem('lolbonk-lang', lang); } catch (e) {}
+          ? 'Conheça Lolbonk, um projeto independente de fã inspirado em League of Legends e survival roguelites. Jinx, Ekko, Darius, Veigar e Rammus em destaque. Em desenvolvimento.'
+          : 'Discover Lolbonk, an independent fan project inspired by League of Legends and survival roguelites. Featuring Jinx, Ekko, Darius, Veigar, and Rammus. In development.';
+        try { localStorage.setItem('lolbonk-language', lang); } catch (e) {}
       }
-      buttons.forEach(function (btn) {
-        btn.addEventListener('click', function () { setLanguage(btn.getAttribute('data-lang')); });
+      buttons.forEach(function (button) {
+        button.addEventListener('click', function () { setLanguage(button.getAttribute('data-lang')); });
       });
-      var initial = 'pt';
-      try {
-        var saved = localStorage.getItem('lolbonk-lang');
-        if (saved === 'pt' || saved === 'en') initial = saved;
-        else if (navigator.language && navigator.language.toLowerCase().indexOf('pt') !== 0) initial = 'en';
-      } catch (e) {}
-      setLanguage(initial);
-      document.getElementById('current-year').textContent = new Date().getFullYear();
-    })();
+      var saved = 'pt';
+      try { saved = localStorage.getItem('lolbonk-language') || 'pt'; } catch (e) {}
+      setLanguage(saved);
+      var year = document.getElementById('year');
+      if (year) year.textContent = new Date().getFullYear();
+    }());
   </script>
 </body>
 </html>
