@@ -371,3 +371,27 @@ a:focus-visible,button:focus-visible {outline: 2px solid var(--gold-light); outl
   html {scroll-behavior: auto;}
   *,*::before,*::after {animation: none !important; transition-duration: .01ms !important;}
 }
+
+
+/* LOLBONK crest — distinctive metallic symbol, no decorative fake controls. */
+.wordmark { gap: 12px; }
+.brand-emblem { display: block; flex: none; width: 44px; height: 48px; object-fit: contain; filter: drop-shadow(0 1px 5px rgba(200,170,110,.16)); }
+.brand-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 3px; }
+.brand-name { display: block; font: 800 27px/1.1 var(--display); letter-spacing: -.045em; }
+.brand-motto { display: block; font: 800 8px/1.5 var(--body); letter-spacing: .22em; color: #bd9b63; }
+.wordmark:hover .brand-name, .wordmark:focus-visible .brand-name { color: #fff8ea; }
+.footer-wordmark .brand-emblem { width: 40px; height: 44px; }
+.footer-wordmark .brand-name { font-size: 24px; }
+@media (max-width:800px) {
+  .brand-emblem { width: 38px; height: 42px; }
+  .brand-name { font-size: 23px; }
+  .brand-motto { font-size: 7px; letter-spacing: .17em; }
+}
+@media (max-width:600px) {
+  .wordmark { gap: 8px; }
+  .brand-emblem { width: 34px; height: 38px; }
+  .brand-name { font-size: 20px; }
+  .brand-motto { font-size: 6.5px; letter-spacing: .13em; }
+  .footer-wordmark .brand-emblem { width: 33px; height: 36px; }
+  .footer-wordmark .brand-name { font-size: 19px; }
+}
