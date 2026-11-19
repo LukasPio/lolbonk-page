@@ -395,3 +395,23 @@ a:focus-visible,button:focus-visible {outline: 2px solid var(--gold-light); outl
   .footer-wordmark .brand-emblem { width: 33px; height: 36px; }
   .footer-wordmark .brand-name { font-size: 19px; }
 }
+
+
+/* Pré-alfa 01 — announcement, three featured characters and one playable zone */
+.hero h1 span:nth-child(2) {font-size:.75em;letter-spacing:-.03em;}
+.roster-grid .roster-card, .roster-grid .roster-card:nth-child(-n+2) {grid-column:span 2;height:420px;}
+.card-poppy img {object-position:60% center;}
+.card-lux img {object-position:58% center;}
+.zones-path {grid-template-columns:repeat(2,minmax(0,1fr));}
+.zone-explore img {object-position:50% center;}
+.zone-poppy img {object-position:62% center;}
+.demacia-boss>img {object-position:73% 32%;}
+@media(max-width:800px){
+  .roster-grid .roster-card, .roster-grid .roster-card:nth-child(-n+2) {height:340px;}
+}
+@media(max-width:600px){
+  .hero h1 span:nth-child(2) {font-size:.72em;}
+  .roster-grid .roster-card, .roster-grid .roster-card:nth-child(-n+2) {grid-column:span 1;height:350px;}
+  .zones-path {grid-template-columns:1fr;}
+  .demacia-boss>img {object-position:63% top;}
+}
